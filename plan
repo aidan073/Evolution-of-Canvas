@@ -1,7 +1,7 @@
 Create dataset:
 - Collect websites to be scraped
 - Scrape paintings of all kinds (may filter later)
-- Paintings must be sorted by culture/geography while scraping, and time period (could have seperate folders for these)
+- Paintings must be sorted by culture/geography and time period, hopefully automatically (Parent folder can be time-period, sub folder can be culture/geography)
 
 Create AI:
 - Research Q1:
@@ -9,5 +9,9 @@ Create AI:
   - Further fine-tune LLM on our dataset (art is input, corresponding analysis is target output)
   - On fine-tuned LLM, pass in a filtered dataset (i.e. images about the Christian concept of god), and get the generated analysis of each painting as output
   - Maybe pass output analysis into a seperate model, that could measure things like sentiment, to analyze how the depictions of a concept have changed over time
+- Research Q2:
+  - no idea
+- Research Q3:
+ - (Rough idea) For each culture sub folder inside each time period folder, enter the true painting analysis for each painting into a chat-bot type LLM, and ask what was happening with that culture at the time
 
 Create website:
