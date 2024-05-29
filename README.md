@@ -6,3 +6,7 @@ Multiple sources to look at: https://guides.lib.berkeley.edu/arthistory/images <
 
 
 ## OpenAI Clip: https://github.com/openai/CLIP
+Clip is a model that uses vectors to identify similarities between images and text
+
+## Img2Dataset: https://github.com/rom1504/img2dataset
+Img2Dataset is a repo that can take large sets of image URLs and turn them into datasets
