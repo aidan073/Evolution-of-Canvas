@@ -2,3 +2,4 @@ Requirements:
 
 - scrapeWGA:
   beautifulsoup4
+  requests
