@@ -10,7 +10,7 @@ Create AI:
   - On fine-tuned LLM, pass in a filtered dataset (i.e. images about the Christian concept of god), and get the generated analysis of each painting as output
   - Maybe pass output analysis into a seperate model, that could measure things like sentiment, to analyze how the depictions of a concept have changed over time
 - Research Q2:
-  - Use https://artsandculture.google.com/category/art-movement to train LLM on specific art-styles, maybe for predicting what art-style a painting is
+  - Use https://artsandculture.google.com/category/art-movement to train Transformer Model on specific art-styles, maybe for predicting what art-style a painting is
 - Research Q3:
  - (Rough idea) For each culture sub folder inside each time period folder, enter the true painting analysis for each painting into a chat-bot type LLM, and ask what was happening with that culture at the time
 
