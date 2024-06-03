@@ -10,3 +10,6 @@ Clip is a model that uses vectors to identify similarities between images and te
 
 ## Img2Dataset: https://github.com/rom1504/img2dataset
 Img2Dataset is a repo that can take large sets of image URLs and turn them into datasets
+
+## WikiArt scraper:
+https://github.com/michaelvin1322/scrapWikiArt
