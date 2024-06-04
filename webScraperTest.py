@@ -6,7 +6,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-# PATH = '/Users/nathanielserrano/Downloads/chromedriver-mac-x64/chromedriver.exe'
+# PATH = '/Users/nathanielserrano/Desktop/Web Scraping/chromedriver.exe'
 # service = webdriver.ChromeService(executable_path = PATH)
 # driver = webdriver.Chrome(service=service)
 
@@ -34,7 +34,7 @@ def scrape_images_from_wga(page_url, save_directory, delay=1):
     # Find all tables on the page
     tables = soup.find_all('table')
 
-    driver.switch_to.frame('buttonframe')
+    # driver.switch_to.frame('buttonframe')
 
 
     # Check if there are tables on the page
@@ -47,7 +47,7 @@ def scrape_images_from_wga(page_url, save_directory, delay=1):
                 if img_url:
                     # Construct the full image URL if it's relative
                     if not img_url.startswith('http'):
-                        img_url = f"https://www.wga.hu{img_url}"
+                        img_url = f"https://s3-us-west-2.amazonaws.com/collections.lacma.org-images/remote_images{img_url}"
                     # Extract the image name from the URL
                     img_name = img_url.split('/')[-1]
                     # Download the image
@@ -58,9 +58,9 @@ def scrape_images_from_wga(page_url, save_directory, delay=1):
         print("No tables found on the page.")
 
 # URL of the WGA page to scrape
-wga_page_url = 'https://www.wga.hu/frames-e.html?/html/a/aachen/index.html'
+# wga_page_url = 'https://collections.lacma.org/search/site?page=1&front=1&f%5B0%5D=bm_field_has_image%3Atrue&f%5B1%5D=im_field_classification%3A22'
 # Directory to save the images on the Mac desktop
-save_dir = os.path.expanduser('~/Desktop/wga_images')
+save_dir = os.path.expanduser('~/Desktop/lacma_images')
 # Delay in seconds between each request
 request_delay = 1
 
