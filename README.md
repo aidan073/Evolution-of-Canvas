@@ -1,3 +1,5 @@
+* Project Moved to GitLab, inactive repository until complete
+
 # Evolution-of-Canvas
 
 Web Gallery of Art: https://www.wga.hu/ Table: https://www.wga.hu/wide-list_alt.html <br/>
